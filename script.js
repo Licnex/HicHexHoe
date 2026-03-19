@@ -40,7 +40,9 @@
     dragStartY: 0,
     panStartX: 0,
     panStartY: 0,
-    sfxEnabled: true
+    sfxEnabled: true,
+    winLineColor: "rgba(242, 204, 96, 0.95)",
+    winCellColor: "rgba(242, 204, 96, 0.95)"
   };
 
   let audioContext = null;
@@ -160,6 +162,12 @@
     } else {
       messageEl.textContent = "";
     }
+  }
+
+  function refreshThemeColors() {
+    const styles = getComputedStyle(document.body);
+    state.winLineColor = styles.getPropertyValue("--win-line").trim() || "rgba(242, 204, 96, 0.95)";
+    state.winCellColor = styles.getPropertyValue("--win-cell").trim() || "rgba(242, 204, 96, 0.95)";
   }
 
   function getAudioContext() {
@@ -372,7 +380,7 @@
     ctx.beginPath();
     ctx.moveTo(origin.x + firstPx.x, origin.y + firstPx.y);
     ctx.lineTo(origin.x + lastPx.x, origin.y + lastPx.y);
-    ctx.strokeStyle = "rgba(242, 204, 96, 0.9)";
+    ctx.strokeStyle = state.winLineColor;
     ctx.lineWidth = 6;
     ctx.lineCap = "round";
     ctx.stroke();
@@ -402,7 +410,7 @@
         }
 
         const winning = inWinningCells(q, r);
-        drawHex(x, y, winning ? "rgba(242, 204, 96, 0.95)" : "rgba(83, 95, 114, 0.8)", winning ? 2.3 : 1);
+        drawHex(x, y, winning ? state.winCellColor : "rgba(83, 95, 114, 0.8)", winning ? 2.3 : 1);
 
         const piece = getCell(q, r);
         if (piece) {
@@ -518,6 +526,7 @@
     themeBtn.setAttribute("title", nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     themeBtn.setAttribute("aria-label", nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     localStorage.setItem("hixhexhoe-theme", nextTheme);
+    refreshThemeColors();
     draw();
   }
 

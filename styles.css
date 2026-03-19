@@ -8,6 +8,8 @@
   --x: #58a6ff;
   --o: #ff7b72;
   --win: #f2cc60;
+  --win-line: rgba(242, 204, 96, 0.95);
+  --win-cell: rgba(242, 204, 96, 0.95);
   --hover: #3fb950;
   --button: #21262d;
   --button-hover: #30363d;
@@ -26,6 +28,8 @@ body[data-theme="light"] {
   --x: #006de0;
   --o: #d7372f;
   --win: #b88400;
+  --win-line: rgba(183, 28, 28, 0.96);
+  --win-cell: rgba(215, 55, 47, 0.92);
   --hover: #0d8f42;
   --button: #e7edf5;
   --button-hover: #dbe5f3;
@@ -149,14 +153,14 @@ canvas {
 }
 
 .help a {
-  color: #9ecbff;
+  color: #c7e6ff;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .help a:hover {
-  color: #ffd1cc;
+  color: #eaf6ff;
 }
 
 .modal {
