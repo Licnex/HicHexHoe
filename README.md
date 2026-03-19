@@ -1,6 +1,6 @@
 # Hix Hex Hoe
 
-Essentially Hexagonal tic tac toe by <a herf= https://www.youtube.com/@webgoatguy> Webgoatguy </a>.
+Essentially Hexagonal tic tac toe by <a herf= https://www.youtube.com/@webgoatguy> webgoatguy </a>.
 
 ## Overview
 
@@ -20,7 +20,6 @@ just go to this <a herf=https://licnex.github.io/HicHexHoe> the hexhixhoe websit
 - **Rules button**: Open game rules modal
 - **Theme button**: Toggle light/dark mode
 - **Reset button**: Start a new game
-- **Esc**: Close the rules modal
 
 ## Notes
 
