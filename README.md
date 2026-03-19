@@ -1,6 +1,6 @@
-# Hix Hex Hoe
+# Hic Hex Hoe
 
-Essentially Hexagonal tic tac toe by <a herf= https://www.youtube.com/@webgoatguy> webgoatguy </a>.
+Essentially Hexagonal tic tac toe by [webgoatguy](https://www.youtube.com/@webgoatguy).
 
 ## Overview
 
@@ -11,7 +11,7 @@ Essentially Hexagonal tic tac toe by <a herf= https://www.youtube.com/@webgoatgu
 
 ## How To Play
 
-just go to the <a herf=https://licnex.github.io/HicHexHoe>HicHexHoe</a> website.
+just go to the [Hic Hex Hoe](https://licnex.github.io/HicHexHoe) website.
 
 ## Controls
 

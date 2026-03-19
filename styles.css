@@ -262,17 +262,21 @@ body[data-theme="light"] .help a:hover {
 
 .sfx-icon {
   position: absolute;
-  font-size: 1.15rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
   line-height: 1;
   transition: opacity 140ms ease, transform 180ms ease;
 }
 
 .sfx-icon.on {
+  color: var(--text);
   opacity: 1;
   transform: scale(1);
 }
 
 .sfx-icon.off {
+  color: var(--o);
   opacity: 0;
   transform: scale(0.7);
 }

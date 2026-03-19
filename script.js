@@ -525,7 +525,7 @@
     document.body.setAttribute("data-theme", nextTheme);
     themeBtn.setAttribute("title", nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     themeBtn.setAttribute("aria-label", nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode");
-    localStorage.setItem("hixhexhoe-theme", nextTheme);
+    localStorage.setItem("Hichexhoe-theme", nextTheme);
     refreshThemeColors();
     draw();
   }
@@ -555,7 +555,7 @@
     sfxBtn.classList.toggle("muted", !enabled);
     sfxBtn.setAttribute("title", enabled ? "Mute sound effects" : "Unmute sound effects");
     sfxBtn.setAttribute("aria-label", enabled ? "Mute sound effects" : "Unmute sound effects");
-    localStorage.setItem("hixhexhoe-sfx", enabled ? "on" : "off");
+    localStorage.setItem("Hichexhoe-sfx", enabled ? "on" : "off");
   }
 
   function toggleSfx() {
@@ -593,8 +593,8 @@
   });
   window.addEventListener("resize", resizeCanvas);
 
-  applySfxEnabled(localStorage.getItem("hixhexhoe-sfx") !== "off");
-  applyTheme(localStorage.getItem("hixhexhoe-theme") || "dark");
+  applySfxEnabled(localStorage.getItem("Hichexhoe-sfx") !== "off");
+  applyTheme(localStorage.getItem("Hichexhoe-theme") || "dark");
   updateStatus();
   resizeCanvas();
 })();
