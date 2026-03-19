@@ -145,7 +145,15 @@ canvas {
   border: 1px solid var(--help-line);
   border-radius: 6px;
   padding: 4px 8px;
-  pointer-events: none;
+  pointer-events: auto;
+}
+
+.help a {
+  color: var(--x);
+}
+
+.help a:hover {
+  color: var(--o);
 }
 
 .modal {

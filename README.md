@@ -11,7 +11,7 @@ Essentially Hexagonal tic tac toe by <a herf= https://www.youtube.com/@webgoatgu
 
 ## How To Play
 
-just go to this the hexhixhoe website
+just go to this <a herf=https://licnex.github.io/HicHexHoe> the hexhixhoe website </a>
 
 ## Controls
 
@@ -24,4 +24,4 @@ just go to this the hexhixhoe website
 
 ## Notes
 
-- idk man I used ai a lot.
+- idk man, I used ai a lot ig
