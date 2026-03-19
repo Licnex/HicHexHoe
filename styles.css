@@ -149,11 +149,14 @@ canvas {
 }
 
 .help a {
-  color: var(--x);
+  color: #9ecbff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .help a:hover {
-  color: var(--o);
+  color: #ffd1cc;
 }
 
 .modal {
@@ -234,13 +237,23 @@ canvas {
 }
 
 body[data-theme="light"] .theme-icon.sun {
+  color: #d7372f;
   opacity: 1;
   transform: scale(1) rotate(0deg);
 }
 
 body[data-theme="light"] .theme-icon.moon {
+  color: #006de0;
   opacity: 0;
   transform: scale(0.7) rotate(20deg);
+}
+
+body[data-theme="light"] .help a {
+  color: #0b57d0;
+}
+
+body[data-theme="light"] .help a:hover {
+  color: #b4231d;
 }
 
 .sfx-icon {
