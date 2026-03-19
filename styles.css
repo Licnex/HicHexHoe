@@ -262,9 +262,9 @@ body[data-theme="light"] .help a:hover {
 
 .sfx-icon {
   position: absolute;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.6px;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 0;
   line-height: 1;
   transition: opacity 140ms ease, transform 180ms ease;
 }
