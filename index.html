@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hix Hex Hoe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div class="title">Hex Tic Tac Toe (Hix Hex Hoe)</div>
+      <div class="status">
+        <span>Current: <strong id="current-player">X</strong></span>
+        <span>Moves Left: <strong id="moves-left">1</strong></span>
+        <span id="message" class="message"></span>
+      </div>
+      <div class="actions">
+        <button id="rules-btn" type="button">Rules</button>
+        <button id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="board"></canvas>
+      <div class="help">Click to place. Drag to pan. First X turn has 1 move.</div>
+    </div>
+  </div>
+
+  <div id="rules-modal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>The board is an effectively infinite hex grid.</li>
+        <li>X starts and places exactly 1 piece on the first turn.</li>
+        <li>After that, players alternate turns placing exactly 2 pieces.</li>
+        <li>Pieces can only be placed on empty hexes.</li>
+        <li>First player to make 6 in a row in any hex direction wins instantly.</li>
+      </ul>
+      <button id="close-rules-btn" type="button">Close</button>
+    </div>
+  </div>
+
+  <div class="fab-stack">
+    <button id="sfx-btn" class="fab sfx-fab" type="button" aria-label="Mute sound effects" title="Mute sound effects">
+      <span class="sfx-icon on" aria-hidden="true">🔊</span>
+      <span class="sfx-icon off" aria-hidden="true">🔇</span>
+    </button>
+
+    <button id="theme-btn" class="fab theme-fab" type="button" aria-label="Toggle light and dark mode" title="Toggle theme">
+      <span class="theme-icon sun" aria-hidden="true">☀</span>
+      <span class="theme-icon moon" aria-hidden="true">☾</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
